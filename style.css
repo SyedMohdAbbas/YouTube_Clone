@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+:root{
+    --black: #0f0f0f;
+    --white: #fff;
+    --gray:#3D3D3D;
+    --blue:#3EA6FF;
+    --dark-blue: #263850;
+   --dark-gray:#222222;
+   --light-gray:#aaaaaa;
+
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins' , 'sans-serif';
+    background-color: var(--black);
+}
+header{
+    height: 3rem;
+    display: flex;
+    padding: 5px 1.5rem;
+    justify-content:space-between ;
+    align-items: center;
+    top:0;
+}
+header > .logo , header> .logo > img{
+    height: 3rem;
+    
+}
+.logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo > span{
+    padding: 0.5rem;
+     border-radius: 50%;
+}
+.logo> span:hover{
+    background-color: var(--gray);
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    color: var(--white);
+}
+.button{
+    background-color: var(--black );
+    border: 1px solid var(--gray);
+    color: var(--blue);
+    padding: 5px  1.5rem;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.button > span{
+    color: var(--blue);
+}
+.button:hover{
+    background-color: var(--dark-blue);
+}
+.pointer{
+    cursor: pointer;
+}
+.search-input > input{
+    background-color: var(--black);
+    outline: none;
+    border: none;
+    color: var(--white);
+}
+.search-input > button{
+    background-color: var(--dark-gray);
+    border: none;
+    color:var(--white);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 0.5rem 1rem;
+    border-left: 1px solid var(--gray);
+}
+.search-input{
+    border: 1px solid var(--gray);
+    border-radius: 25px;
+    padding-left: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+nav{
+    width: 15%;
+    border: 1px solid;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: stretch;
+  
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+}
+nav span{
+    font-size: 0.9rem;
+}
+
+.nav-item:hover{
+    background-color: var(--gray);
+}
+.active{
+    background-color: var(--dark-gray);
+}
+hr{
+    width: 100%;
+}
+.nav-login{
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem 1rem;
+}
+.nav-login > button{
+    margin-top: 0.5rem;
+}
+nav a{
+    color: var(--light-gray);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.suggestions{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0px 2.5rem;
+    overflow-x: auto;
+    overflow: hidden;
+
+}
+.suggestions > span{
+   background-color: var(--gray);
+   color: var(--white);
+    border-radius: 5px;
+    padding: 0.25rem 0.75rem;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+   
+}
+.suggestions > span.active{
+    color: var(--white);
+    background-color: var(--black);
+}
+main{
+    display: flex;
+    gap:0.5rem;
+}
+.suggestions > span:hover{
+    background-color: var(--light-gray);
+
+}
+section{
+    width: 85%;
+    height: calc(100vh- 6rem);
+   
+}
+.video-list-container{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 1rem;
+    gap: 2rem;
+    padding:  1.5rem 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    
+}
+
+.thumbnail{
+    border-radius: 0.5rem;
+    width: 370px;
+    height: 200px;
+    background-color: var(--light-gray);
+
+}
+.video-meta{
+    display: flex;
+    gap:0.5rem;
+}
+.video-list-item{
+    width: 30%;
+    margin: 0 1rem;
+}
+.channel-logo{
+    height: 36px;
+    width: 36px;
+    border-radius: 90%;
+    background-color:var(--light-gray);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title{
+    font-weight: 600;
+}
+.channel-name{
+    font-size: 1rem;
+    color: var(--light-gray);
+    transition: color 0.25s;
+}
+.video-views , .video-time{
+    color: var(--light-gray);
+    font-size: 0.8rem;
+}
+.channel-name:hover{
+    color: var(--white);
+}
